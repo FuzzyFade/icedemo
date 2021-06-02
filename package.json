@@ -53,6 +53,7 @@
     "jspdf": "^1.5.3",
     "lodash": "^4.17.10",
     "md5": "^2.2.1",
+    "mini-css-extract-plugin": "^1.6.0",
     "mockjs": "^1.1.0",
     "moment": "^2.23.0",
     "node-sass": "^4.12.0",
@@ -83,6 +84,8 @@
   "devDependencies": {
     "babel-eslint": "^8.0.3",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "build-plugin-fusion": "^0.1.0",
+    "build-plugin-moment-locales": "^0.1.0",
     "cross-env": "^5.2.0",
     "eslint": "^4.13.1",
     "eslint-config-airbnb": "^16.1.0",
@@ -91,17 +94,17 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "html-webpack-plugin": "^4.0.0-beta.5",
-    "ice-scripts": "^1.6.0",
+    "ice.js": "^1.0.0",
     "webpack-merge": "^5.7.3"
   },
   "scripts": {
-    "start": "ice dev",
-    "start:test": "cross-env N_ENV=test ice dev",
-    "start:local": "cross-env N_ENV=local ice dev",
-    "start:uat": "cross-env N_ENV=uat ice dev",
-    "build:test": "cross-env N_ENV=test ice build",
-    "build:uat": "cross-env N_ENV=uat ice build",
-    "build:prod": "cross-env N_ENV=prod ice build",
+    "start": "icejs start",
+    "start:test": "cross-env N_ENV=test icejs start",
+    "start:local": "cross-env N_ENV=local icejs start",
+    "start:uat": "cross-env N_ENV=uat icejs start",
+    "build:test": "cross-env N_ENV=test icejs build",
+    "build:uat": "cross-env N_ENV=uat icejs build",
+    "build:prod": "cross-env N_ENV=prod icejs build",
     "lint": "eslint . --ext '.js,.jsx' --fix"
   },
   "publishConfig": {
