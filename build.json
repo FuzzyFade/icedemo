@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    ["build-plugin-fusion", {
+      "themePackage": "@alifd/theme-hccx"
+    }],
+    "./build.plugin.js"
+  ]
+}
